@@ -1,16 +1,16 @@
 ﻿namespace DataSourceDemo
 {
-    partial class Form1
+    partial class ejemploConexion
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,16 +20,26 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ejemploConexion));
+            System.Windows.Forms.Label companyNameLabel;
+            System.Windows.Forms.Label contactNameLabel;
+            System.Windows.Forms.Label contactTitleLabel;
+            System.Windows.Forms.Label addressLabel;
+            System.Windows.Forms.Label cityLabel;
+            System.Windows.Forms.Label regionLabel;
+            System.Windows.Forms.Label postalCodeLabel;
+            System.Windows.Forms.Label countryLabel;
+            System.Windows.Forms.Label phoneLabel;
+            System.Windows.Forms.Label faxLabel;
             this.northwindDataSet = new DataSourceDemo.NorthwindDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersTableAdapter = new DataSourceDemo.NorthwindDataSetTableAdapters.CustomersTableAdapter();
@@ -47,22 +57,30 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.customersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.customersDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companyNameTextBox = new System.Windows.Forms.TextBox();
+            this.contactNameTextBox = new System.Windows.Forms.TextBox();
+            this.contactTitleTextBox = new System.Windows.Forms.TextBox();
+            this.addressTextBox = new System.Windows.Forms.TextBox();
+            this.cityTextBox = new System.Windows.Forms.TextBox();
+            this.regionTextBox = new System.Windows.Forms.TextBox();
+            this.postalCodeTextBox = new System.Windows.Forms.TextBox();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.phoneTextBox = new System.Windows.Forms.TextBox();
+            this.faxTextBox = new System.Windows.Forms.TextBox();
+            companyNameLabel = new System.Windows.Forms.Label();
+            contactNameLabel = new System.Windows.Forms.Label();
+            contactTitleLabel = new System.Windows.Forms.Label();
+            addressLabel = new System.Windows.Forms.Label();
+            cityLabel = new System.Windows.Forms.Label();
+            regionLabel = new System.Windows.Forms.Label();
+            postalCodeLabel = new System.Windows.Forms.Label();
+            countryLabel = new System.Windows.Forms.Label();
+            phoneLabel = new System.Windows.Forms.Label();
+            faxLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).BeginInit();
             this.customersBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // northwindDataSet
@@ -111,7 +129,7 @@
             this.customersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.customersBindingNavigator.Name = "customersBindingNavigator";
             this.customersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.customersBindingNavigator.Size = new System.Drawing.Size(918, 25);
+            this.customersBindingNavigator.Size = new System.Drawing.Size(800, 25);
             this.customersBindingNavigator.TabIndex = 0;
             this.customersBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -209,104 +227,210 @@
             this.customersBindingNavigatorSaveItem.Text = "Guardar datos";
             this.customersBindingNavigatorSaveItem.Click += new System.EventHandler(this.customersBindingNavigatorSaveItem_Click);
             // 
-            // customersDataGridView
+            // companyNameLabel
             // 
-            this.customersDataGridView.AutoGenerateColumns = false;
-            this.customersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customersDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.customersDataGridView.DataSource = this.customersBindingSource;
-            this.customersDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customersDataGridView.Location = new System.Drawing.Point(0, 25);
-            this.customersDataGridView.Name = "customersDataGridView";
-            this.customersDataGridView.Size = new System.Drawing.Size(918, 425);
-            this.customersDataGridView.TabIndex = 1;
+            companyNameLabel.AutoSize = true;
+            companyNameLabel.Location = new System.Drawing.Point(197, 116);
+            companyNameLabel.Name = "companyNameLabel";
+            companyNameLabel.Size = new System.Drawing.Size(85, 13);
+            companyNameLabel.TabIndex = 3;
+            companyNameLabel.Text = "Company Name:";
             // 
-            // dataGridViewTextBoxColumn2
+            // companyNameTextBox
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "CompanyName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "CompanyName";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.companyNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "CompanyName", true));
+            this.companyNameTextBox.Location = new System.Drawing.Point(288, 113);
+            this.companyNameTextBox.Name = "companyNameTextBox";
+            this.companyNameTextBox.Size = new System.Drawing.Size(259, 20);
+            this.companyNameTextBox.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn3
+            // contactNameLabel
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "ContactName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "ContactName";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            contactNameLabel.AutoSize = true;
+            contactNameLabel.Location = new System.Drawing.Point(197, 142);
+            contactNameLabel.Name = "contactNameLabel";
+            contactNameLabel.Size = new System.Drawing.Size(78, 13);
+            contactNameLabel.TabIndex = 5;
+            contactNameLabel.Text = "Contact Name:";
             // 
-            // dataGridViewTextBoxColumn4
+            // contactNameTextBox
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "ContactTitle";
-            this.dataGridViewTextBoxColumn4.HeaderText = "ContactTitle";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.contactNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactName", true));
+            this.contactNameTextBox.Location = new System.Drawing.Point(288, 139);
+            this.contactNameTextBox.Name = "contactNameTextBox";
+            this.contactNameTextBox.Size = new System.Drawing.Size(259, 20);
+            this.contactNameTextBox.TabIndex = 6;
             // 
-            // dataGridViewTextBoxColumn5
+            // contactTitleLabel
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            contactTitleLabel.AutoSize = true;
+            contactTitleLabel.Location = new System.Drawing.Point(197, 168);
+            contactTitleLabel.Name = "contactTitleLabel";
+            contactTitleLabel.Size = new System.Drawing.Size(70, 13);
+            contactTitleLabel.TabIndex = 7;
+            contactTitleLabel.Text = "Contact Title:";
             // 
-            // dataGridViewTextBoxColumn6
+            // contactTitleTextBox
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "City";
-            this.dataGridViewTextBoxColumn6.HeaderText = "City";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.contactTitleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "ContactTitle", true));
+            this.contactTitleTextBox.Location = new System.Drawing.Point(288, 165);
+            this.contactTitleTextBox.Name = "contactTitleTextBox";
+            this.contactTitleTextBox.Size = new System.Drawing.Size(259, 20);
+            this.contactTitleTextBox.TabIndex = 8;
             // 
-            // dataGridViewTextBoxColumn7
+            // addressLabel
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Region";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Region";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            addressLabel.AutoSize = true;
+            addressLabel.Location = new System.Drawing.Point(197, 194);
+            addressLabel.Name = "addressLabel";
+            addressLabel.Size = new System.Drawing.Size(48, 13);
+            addressLabel.TabIndex = 9;
+            addressLabel.Text = "Address:";
             // 
-            // dataGridViewTextBoxColumn8
+            // addressTextBox
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "PostalCode";
-            this.dataGridViewTextBoxColumn8.HeaderText = "PostalCode";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Address", true));
+            this.addressTextBox.Location = new System.Drawing.Point(288, 191);
+            this.addressTextBox.Name = "addressTextBox";
+            this.addressTextBox.Size = new System.Drawing.Size(259, 20);
+            this.addressTextBox.TabIndex = 10;
             // 
-            // dataGridViewTextBoxColumn9
+            // cityLabel
             // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "Country";
-            this.dataGridViewTextBoxColumn9.HeaderText = "Country";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            cityLabel.AutoSize = true;
+            cityLabel.Location = new System.Drawing.Point(197, 220);
+            cityLabel.Name = "cityLabel";
+            cityLabel.Size = new System.Drawing.Size(27, 13);
+            cityLabel.TabIndex = 11;
+            cityLabel.Text = "City:";
             // 
-            // dataGridViewTextBoxColumn10
+            // cityTextBox
             // 
-            this.dataGridViewTextBoxColumn10.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn10.HeaderText = "Phone";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "City", true));
+            this.cityTextBox.Location = new System.Drawing.Point(288, 217);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(259, 20);
+            this.cityTextBox.TabIndex = 12;
             // 
-            // dataGridViewTextBoxColumn11
+            // regionLabel
             // 
-            this.dataGridViewTextBoxColumn11.DataPropertyName = "Fax";
-            this.dataGridViewTextBoxColumn11.HeaderText = "Fax";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            regionLabel.AutoSize = true;
+            regionLabel.Location = new System.Drawing.Point(197, 246);
+            regionLabel.Name = "regionLabel";
+            regionLabel.Size = new System.Drawing.Size(44, 13);
+            regionLabel.TabIndex = 13;
+            regionLabel.Text = "Region:";
             // 
-            // Form1
+            // regionTextBox
+            // 
+            this.regionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Region", true));
+            this.regionTextBox.Location = new System.Drawing.Point(288, 243);
+            this.regionTextBox.Name = "regionTextBox";
+            this.regionTextBox.Size = new System.Drawing.Size(259, 20);
+            this.regionTextBox.TabIndex = 14;
+            // 
+            // postalCodeLabel
+            // 
+            postalCodeLabel.AutoSize = true;
+            postalCodeLabel.Location = new System.Drawing.Point(197, 272);
+            postalCodeLabel.Name = "postalCodeLabel";
+            postalCodeLabel.Size = new System.Drawing.Size(67, 13);
+            postalCodeLabel.TabIndex = 15;
+            postalCodeLabel.Text = "Postal Code:";
+            // 
+            // postalCodeTextBox
+            // 
+            this.postalCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "PostalCode", true));
+            this.postalCodeTextBox.Location = new System.Drawing.Point(288, 269);
+            this.postalCodeTextBox.Name = "postalCodeTextBox";
+            this.postalCodeTextBox.Size = new System.Drawing.Size(259, 20);
+            this.postalCodeTextBox.TabIndex = 16;
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new System.Drawing.Point(197, 298);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(46, 13);
+            countryLabel.TabIndex = 17;
+            countryLabel.Text = "Country:";
+            // 
+            // countryTextBox
+            // 
+            this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Country", true));
+            this.countryTextBox.Location = new System.Drawing.Point(288, 295);
+            this.countryTextBox.Name = "countryTextBox";
+            this.countryTextBox.Size = new System.Drawing.Size(259, 20);
+            this.countryTextBox.TabIndex = 18;
+            // 
+            // phoneLabel
+            // 
+            phoneLabel.AutoSize = true;
+            phoneLabel.Location = new System.Drawing.Point(197, 324);
+            phoneLabel.Name = "phoneLabel";
+            phoneLabel.Size = new System.Drawing.Size(41, 13);
+            phoneLabel.TabIndex = 19;
+            phoneLabel.Text = "Phone:";
+            // 
+            // phoneTextBox
+            // 
+            this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Phone", true));
+            this.phoneTextBox.Location = new System.Drawing.Point(288, 321);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(259, 20);
+            this.phoneTextBox.TabIndex = 20;
+            // 
+            // faxLabel
+            // 
+            faxLabel.AutoSize = true;
+            faxLabel.Location = new System.Drawing.Point(197, 350);
+            faxLabel.Name = "faxLabel";
+            faxLabel.Size = new System.Drawing.Size(27, 13);
+            faxLabel.TabIndex = 21;
+            faxLabel.Text = "Fax:";
+            // 
+            // faxTextBox
+            // 
+            this.faxTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.customersBindingSource, "Fax", true));
+            this.faxTextBox.Location = new System.Drawing.Point(288, 347);
+            this.faxTextBox.Name = "faxTextBox";
+            this.faxTextBox.Size = new System.Drawing.Size(259, 20);
+            this.faxTextBox.TabIndex = 22;
+            // 
+            // ejemploConexion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 450);
-            this.Controls.Add(this.customersDataGridView);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(companyNameLabel);
+            this.Controls.Add(this.companyNameTextBox);
+            this.Controls.Add(contactNameLabel);
+            this.Controls.Add(this.contactNameTextBox);
+            this.Controls.Add(contactTitleLabel);
+            this.Controls.Add(this.contactTitleTextBox);
+            this.Controls.Add(addressLabel);
+            this.Controls.Add(this.addressTextBox);
+            this.Controls.Add(cityLabel);
+            this.Controls.Add(this.cityTextBox);
+            this.Controls.Add(regionLabel);
+            this.Controls.Add(this.regionTextBox);
+            this.Controls.Add(postalCodeLabel);
+            this.Controls.Add(this.postalCodeTextBox);
+            this.Controls.Add(countryLabel);
+            this.Controls.Add(this.countryTextBox);
+            this.Controls.Add(phoneLabel);
+            this.Controls.Add(this.phoneTextBox);
+            this.Controls.Add(faxLabel);
+            this.Controls.Add(this.faxTextBox);
             this.Controls.Add(this.customersBindingNavigator);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "ejemploConexion";
+            this.Text = "ejemploConexion";
+            this.Load += new System.EventHandler(this.ejemploConexion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.northwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingNavigator)).EndInit();
             this.customersBindingNavigator.ResumeLayout(false);
             this.customersBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customersDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,17 +455,15 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton customersBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView customersDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.TextBox companyNameTextBox;
+        private System.Windows.Forms.TextBox contactNameTextBox;
+        private System.Windows.Forms.TextBox contactTitleTextBox;
+        private System.Windows.Forms.TextBox addressTextBox;
+        private System.Windows.Forms.TextBox cityTextBox;
+        private System.Windows.Forms.TextBox regionTextBox;
+        private System.Windows.Forms.TextBox postalCodeTextBox;
+        private System.Windows.Forms.TextBox countryTextBox;
+        private System.Windows.Forms.TextBox phoneTextBox;
+        private System.Windows.Forms.TextBox faxTextBox;
     }
 }
-

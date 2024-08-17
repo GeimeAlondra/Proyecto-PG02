@@ -1,0 +1,11 @@
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\bin\Debug\DataSourceDemo.exe.config
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\bin\Debug\DataSourceDemo.exe
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\bin\Debug\DataSourceDemo.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.csproj.AssemblyReference.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.Form1.resources
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.Properties.Resources.resources
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.csproj.GenerateResource.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.csproj.CoreCompileInputs.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.exe
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\DataSourceDemo\DataSourceDemo\obj\Debug\DataSourceDemo.ejemploConexion.resources
