@@ -1,0 +1,6 @@
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\DatosLayer\bin\Debug\DatosLayer.dll
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\DatosLayer\bin\Debug\DatosLayer.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\DatosLayer\obj\Debug\DatosLayer.csproj.AssemblyReference.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\DatosLayer\obj\Debug\DatosLayer.csproj.CoreCompileInputs.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\DatosLayer\obj\Debug\DatosLayer.dll
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\DatosLayer\obj\Debug\DatosLayer.pdb

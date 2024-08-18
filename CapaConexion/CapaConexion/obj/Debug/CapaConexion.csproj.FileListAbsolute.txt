@@ -8,3 +8,6 @@ D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proy
 D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.csproj.CoreCompileInputs.cache
 D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.exe
 D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\bin\Debug\DatosLayer.dll
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\bin\Debug\DatosLayer.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.csproj.CopyComplete
