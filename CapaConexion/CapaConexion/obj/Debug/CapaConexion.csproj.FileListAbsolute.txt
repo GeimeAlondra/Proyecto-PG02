@@ -1,0 +1,10 @@
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\bin\Debug\CapaConexion.exe.config
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\bin\Debug\CapaConexion.exe
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\bin\Debug\CapaConexion.pdb
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.csproj.AssemblyReference.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.Form1.resources
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.Properties.Resources.resources
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.csproj.GenerateResource.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.csproj.CoreCompileInputs.cache
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.exe
+D:\Usuarios\Alondra\Documents\UNAB\CICLO IV - 2024 - UNAB\sPG2-20\Periodo 1\Proyecto-PG02\CapaConexion\CapaConexion\obj\Debug\CapaConexion.pdb
