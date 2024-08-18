@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaConexion.Modelos;
 
 namespace CapaConexion
 {
@@ -48,9 +49,26 @@ namespace CapaConexion
             SqlCommand comando = new SqlCommand(selectFrom, conexion);
             SqlDataReader reader = comando.ExecuteReader();
 
+            List<Customers> Customers = new List<Customers>();
+
             while (reader.Read())
             {
-                var customerId = reader["CompanyName"];
+                //var customerId = reader["CompanyName"];
+                // Cambiara en cada iteración, no mantendra su valor
+
+                Customers customers = new Customers();
+                customers.CompanyName = reader["CompanyName"] == DBNull.Value ? "" : (String)reader["CompanyName"];
+                customers.ContactName = reader["ContactName"] == DBNull.Value ? "" : (String)reader["ContactName"];
+                customers.ContactTitle = reader["ContactTitle"] == DBNull.Value ? "" : (String)reader["ContactTitle"];
+                customers.Address = reader["Address"] == DBNull.Value ? "" : (String)reader["Address"];
+                customers.City = reader["City"] == DBNull.Value ? "" : (String)reader["City"];
+                customers.Region = reader["Region"] == DBNull.Value ? "" : (String)reader["Region"];
+                customers.PostalCode = reader["PostalCode"] == DBNull.Value ? "" : (String)reader["PostalCode"];
+                customers.Country = reader["Country"] == DBNull.Value ? "" : (String)reader["Country"];
+                customers.Phone = reader["Phone"] == DBNull.Value ? "" : (String)reader["Phone"];
+                customers.Fax = reader["Fax"] == DBNull.Value ? "" : (String)reader["Fax"];
+
+                Customers.Add(customers);
             }
 
             MessageBox.Show("Conexion cerrada");
