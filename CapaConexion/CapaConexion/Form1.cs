@@ -86,7 +86,11 @@ namespace CapaConexion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DatosLayer.DataBase.ApplicationName = "Programación II - Ejemplo";
+            DatosLayer.DataBase.ConnetionTimeout = 30;
             string cadenaConexion = DatosLayer.DataBase.ConnectionString;
+
+            var conectarDB = DatosLayer.DataBase.GetSqlConnection();
             //MessageBox.Show(cadenaConexion);
         }
     }
