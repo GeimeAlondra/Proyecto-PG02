@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CapaConexion.Modelos
+namespace DatosLayer
 {
     public class Customers
     {
