@@ -15,7 +15,7 @@ namespace CapaConexion
     public partial class Form1 : Form
     {
         // List<Customers> Customers = new List<Customers>();
-        
+
         CustomerRepository customerRepository = new CustomerRepository();
 
         public Form1()
@@ -41,10 +41,20 @@ namespace CapaConexion
         {
             //DatosLayer.DataBase.ApplicationName = "Programación II - Ejemplo";
             //DatosLayer.DataBase.ConnetionTimeout = 30;
-           
+
             //string cadenaConexion = DatosLayer.DataBase.ConnectionString;
             //var conectarDB = DatosLayer.DataBase.GetSqlConnection();
             //MessageBox.Show(cadenaConexion);
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            var cliente = customerRepository.ObtenerPorID(txtBuscar.Text);
+            if (cliente != null)
+            {
+                txtBuscar.Text = cliente.CompanyName;
+                MessageBox.Show(cliente.CompanyName);
+            }
         }
     }
 }
