@@ -67,6 +67,7 @@
             this.tboxCity = new System.Windows.Forms.TextBox();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnModificar = new System.Windows.Forms.Button();
             customerIDLabel = new System.Windows.Forms.Label();
             companyNameLabel = new System.Windows.Forms.Label();
             contactNameLabel = new System.Windows.Forms.Label();
@@ -386,7 +387,7 @@
             // 
             this.btnIngresar.Location = new System.Drawing.Point(552, 337);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(188, 23);
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
             this.btnIngresar.TabIndex = 18;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -399,11 +400,22 @@
             this.txtBuscar.Size = new System.Drawing.Size(100, 20);
             this.txtBuscar.TabIndex = 19;
             // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(665, 337);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.TabIndex = 21;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(label2);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnIngresar);
@@ -471,6 +483,7 @@
         private System.Windows.Forms.TextBox tboxCity;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.Button btnModificar;
     }
 }
 

@@ -40,21 +40,22 @@ namespace CapaConexion
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.Customers' Puede moverla o quitarla según sea necesario.
-            this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
             //DatosLayer.DataBase.ApplicationName = "Programación II - Ejemplo";
             //DatosLayer.DataBase.ConnetionTimeout = 30;
 
             //string cadenaConexion = DatosLayer.DataBase.ConnectionString;
             //var conectarDB = DatosLayer.DataBase.GetSqlConnection();
-            //MessageBox.Show(cadenaConexion);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             var cliente = customerRepository.ObtenerPorID(txtBuscar.Text);
-            //tboxCustomerID.Text = cliente.CustomerID;
-
+            tboxCustomerID.Text = cliente.CustomerID;
+            tboxCompanyName.Text = cliente.CompanyName;
+            tboxContactName.Text = cliente.ContactName;
+            tboxContactTitle.Text = cliente.ContactTitle;
+            tboxAddress.Text = cliente.Address;
+            tboxCity.Text = cliente.City;
         }
 
         private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -67,30 +68,30 @@ namespace CapaConexion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            var nuevoCliente = new Customers 
-            {
-                CustomerID = tboxCustomerID.Text,
-                CompanyName = tboxCompanyName.Text,
-                ContactName = tboxContactName.Text,
-                ContactTitle = tboxContactTitle.Text,
-                Address = tboxAddress.Text,
-                City = tboxCity.Text,
-            };
-
             var resultado = 0;
-            if (validarCampoNull(nuevoCliente) == false)
-            {
-                resultado = customerRepository.InsertarCliente(nuevoCliente);
-                MessageBox.Show("Cliente guardado");
-            }
-            else
-            {
-                MessageBox.Show("Debe completar todos los campos por favor" + resultado);
-            }
+
+            var nuevoCliente = ObtenerNuevoCliente();
+
+            /*  
+            if (tboxCustomerID.Text != "" || 
+                  tboxCompanyName.Text !="" ||
+                  tboxContacName.Text != "" ||
+                  tboxContacName.Text != "" ||
+                  tboxAddress.Text != ""    ||
+                  tboxCity.Text != "")
+              {
+                  resultado = customerRepository.InsertarCliente(nuevoCliente);
+                  MessageBox.Show("Guardado" + "Filas modificadas = " + resultado);
+              }
+              else {
+                  MessageBox.Show("Debe completar los campos por favor");
+              }
+              */
+
             /*
             if (nuevoCliente.CustomerID == "") {
                 MessageBox.Show("El Id en el usuario debe de completarse");
-               return;    
+                return;    
             }
 
             if (nuevoCliente.ContactName == "")
@@ -115,6 +116,16 @@ namespace CapaConexion
                 return;
             }
             */
+
+            if (validarCampoNull(nuevoCliente) == false)
+            {
+                resultado = customerRepository.InsertarCliente(nuevoCliente);
+                MessageBox.Show("Guardado" + "Filas modificadas = " + resultado);
+            }
+            else
+            {
+                MessageBox.Show("Debe completar los campos por favor");
+            }
         }
 
         public Boolean validarCampoNull(Object objeto)
@@ -128,6 +139,28 @@ namespace CapaConexion
                 }
             }
             return false;
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            var actualizarCliente = ObtenerNuevoCliente();
+            int actualizadas = customerRepository.ActualizarCliente(actualizarCliente);
+            MessageBox.Show($"Filas actualizadas = {actualizadas}");
+        }
+
+        private Customers ObtenerNuevoCliente()
+        {
+            var nuevoCliente = new Customers
+            {
+                CustomerID = tboxCustomerID.Text,
+                CompanyName = tboxCompanyName.Text,
+                ContactName = tboxContactName.Text,
+                ContactTitle = tboxContactTitle.Text,
+                Address = tboxAddress.Text,
+                City = tboxCity.Text,
+            };
+
+            return nuevoCliente;
         }
     }
 }
