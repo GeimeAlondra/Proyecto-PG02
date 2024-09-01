@@ -24,6 +24,7 @@ namespace DatosLayer
         //    public string CompanyName { get; set; }
         //}
 
+        public string CustomerID { get; set; }
         public String CompanyName { get; set; }
         public String ContactName { get; set; }
         public String ContactTitle { get; set; }

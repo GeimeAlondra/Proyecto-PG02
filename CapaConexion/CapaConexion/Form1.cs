@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -39,6 +40,8 @@ namespace CapaConexion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'northwindDataSet.Customers' Puede moverla o quitarla según sea necesario.
+            this.customersTableAdapter.Fill(this.northwindDataSet.Customers);
             //DatosLayer.DataBase.ApplicationName = "Programación II - Ejemplo";
             //DatosLayer.DataBase.ConnetionTimeout = 30;
 
@@ -50,11 +53,81 @@ namespace CapaConexion
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             var cliente = customerRepository.ObtenerPorID(txtBuscar.Text);
-            if (cliente != null)
+            //tboxCustomerID.Text = cliente.CustomerID;
+
+        }
+
+        private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.customersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.northwindDataSet);
+
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            var nuevoCliente = new Customers 
             {
-                txtBuscar.Text = cliente.CompanyName;
-                MessageBox.Show(cliente.CompanyName);
+                CustomerID = tboxCustomerID.Text,
+                CompanyName = tboxCompanyName.Text,
+                ContactName = tboxContactName.Text,
+                ContactTitle = tboxContactTitle.Text,
+                Address = tboxAddress.Text,
+                City = tboxCity.Text,
+            };
+
+            var resultado = 0;
+            if (validarCampoNull(nuevoCliente) == false)
+            {
+                resultado = customerRepository.InsertarCliente(nuevoCliente);
+                MessageBox.Show("Cliente guardado");
             }
+            else
+            {
+                MessageBox.Show("Debe completar todos los campos por favor" + resultado);
+            }
+            /*
+            if (nuevoCliente.CustomerID == "") {
+                MessageBox.Show("El Id en el usuario debe de completarse");
+               return;    
+            }
+
+            if (nuevoCliente.ContactName == "")
+            {
+                MessageBox.Show("El nombre de usuario debe de completarse");
+                return;
+            }
+            
+            if (nuevoCliente.ContactTitle == "")
+            {
+                MessageBox.Show("El contacto de usuario debe de completarse");
+                return;
+            }
+            if (nuevoCliente.Address == "")
+            {
+                MessageBox.Show("la direccion de usuario debe de completarse");
+                return;
+            }
+            if (nuevoCliente.City == "")
+            {
+                MessageBox.Show("La ciudad de usuario debe de completarse");
+                return;
+            }
+            */
+        }
+
+        public Boolean validarCampoNull(Object objeto)
+        {
+            foreach (PropertyInfo property in objeto.GetType().GetProperties())
+            {
+                object value = property.GetValue(objeto, null);
+                if ((string)value == "")
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

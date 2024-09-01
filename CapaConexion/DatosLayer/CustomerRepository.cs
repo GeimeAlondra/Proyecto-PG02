@@ -69,7 +69,7 @@ namespace DatosLayer
                     comando.Parameters.AddWithValue("customerId", id);
                     var reader = comando.ExecuteReader();
                     Customers customers = null;
-                 
+
                     if (reader.Read())
                     {
                         customers = LeerDelDataReader(reader);
@@ -93,8 +93,42 @@ namespace DatosLayer
             customers.Country = reader["Country"] == DBNull.Value ? "" : (String)reader["Country"];
             customers.Phone = reader["Phone"] == DBNull.Value ? "" : (String)reader["Phone"];
             customers.Fax = reader["Fax"] == DBNull.Value ? "" : (String)reader["Fax"];
-        
+
             return customers;
+        }
+
+        public int InsertarCliente(Customers customer)
+        {
+            using (var conexion = DataBase.GetSqlConnection())
+            {
+                String insertInto = "";
+                insertInto = insertInto + "INSERT INTO [dbo].[Customers] " + "\n";
+                insertInto = insertInto + "           ([CustomerID] " + "\n";
+                insertInto = insertInto + "           ,[CompanyName] " + "\n";
+                insertInto = insertInto + "           ,[ContactName] " + "\n";
+                insertInto = insertInto + "           ,[ContactTitle] " + "\n";
+                insertInto = insertInto + "           ,[Address] " + "\n";
+                insertInto = insertInto + "           ,[City]) " + "\n";
+                insertInto = insertInto + "     VALUES " + "\n";
+                insertInto = insertInto + "           (@CustomerID " + "\n";
+                insertInto = insertInto + "           ,@CompanyName " + "\n";
+                insertInto = insertInto + "           ,@ContactName " + "\n";
+                insertInto = insertInto + "           ,@ContactTitle " + "\n";
+                insertInto = insertInto + "           ,@Address " + "\n";
+                insertInto = insertInto + "           ,@City)";
+
+                using (var comando = new SqlCommand(insertInto, conexion))
+                {
+                    comando.Parameters.AddWithValue("CustomerID", customer.CustomerID);
+                    comando.Parameters.AddWithValue("CompanyName", customer.CompanyName);
+                    comando.Parameters.AddWithValue("ContactName", customer.ContactName);
+                    comando.Parameters.AddWithValue("ContactTitle", customer.ContactName);
+                    comando.Parameters.AddWithValue("Address", customer.Address);
+                    comando.Parameters.AddWithValue("City", customer.City);
+                    var insertados = comando.ExecuteNonQuery();
+                    return insertados;
+                }
+            }
         }
     }
 }
